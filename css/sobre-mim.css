@@ -1,0 +1,143 @@
+.sobre-mim > div {
+    background-color: var(--secondary);
+}
+
+.sobre-mim-articles-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.sobre-mim-articles-container article {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: .5s all;
+}
+
+.sobre-mim-articles-container article p {
+    width: 580px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.sobre-mim-buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sobre-mim-buttons-container button {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: var(--secondary);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    height: 100px;
+    color: var(--text-1);
+    transition: .5s all;
+}
+
+.sobre-mim-buttons-container button:hover {
+    background-color: var(--text-1) !important;
+    color: var(--secondary) !important;
+}
+
+.sobre-mim-buttons-container button:hover path, .sobre-mim-buttons-container button:hover circle {
+    fill: var(--secondary);
+}
+
+.sobre-mim-buttons-container button:nth-child(2n) {
+    background-color: var(--text-1);
+    color: var(--secondary);
+}
+
+.sobre-mim-buttons-container button:nth-child(2n) path {
+    fill: var(--secondary);
+}
+
+.sobre-mim-buttons-container button:nth-child(2n):hover {
+    background-color: var(--secondary) !important;
+    color: var(--text-1) !important;
+}
+
+.sobre-mim-buttons-container button:nth-child(2n):hover path, .sobre-mim-buttons-container button:nth-child(2n):hover circle {
+    fill: var(--text-1);
+}
+
+.sobre-mim-buttons-container button svg {
+    width: 32px;
+    height: 32px;
+}
+
+.sobre-mim-buttons-container button path, .sobre-mim-buttons-container button circle {
+    transition: .5s all;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+#videos-audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#videos-audio-container > div {
+    max-width: 100%;
+}
+
+#videos-audio-container button {
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    color: var(--text-1);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#videos-audio-container video, #videos-audio-container audio {
+    max-width: 100%;
+    width: 800px;
+}
+
+.hidden-music {
+    display: none !important;
+}
+
+.show-music {
+    display: block !important;
+}
+
+.buttons-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

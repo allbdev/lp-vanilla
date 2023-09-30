@@ -1,0 +1,74 @@
+.contact form {
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: var(--secondary);
+    box-shadow: 0 2px 20px var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.input-container {
+    width: 500px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label, .radio-container label {
+    font-size: .8rem;
+    color: var(--primary);
+}
+
+.input-container option {
+    color: black !important;
+}
+
+.input-container textarea {
+    resize: none;
+    height: 150px;
+    overflow: auto;
+}
+
+.input-container input, .input-container select, .input-container textarea {
+    background-color: transparent;
+    padding: .8rem .5rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    color: white;
+}
+
+.radio-container {
+    display: flex;
+    gap: 1rem;
+    width: 500px;
+    max-width: 100%;
+}
+
+.radio-container > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-container {
+    width: 500px;
+    max-width: 100%;
+}
+
+.checkbox-container a {
+    display: inline;
+}
+
+.contact button {
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    color: var(--text-1);
+    font-weight: 700;
+    border-radius: 5px;
+}

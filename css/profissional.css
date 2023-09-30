@@ -1,0 +1,38 @@
+.professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professional h1 {
+    text-align: center;
+} 
+
+.professional article {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    width: 800px;
+    max-width: 100%;
+}
+
+.professional article h2{
+    text-decoration: underline;
+}
+
+.professional article:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.professional article img {
+    width: 50%;
+    height: auto;
+    max-height: 300px;
+}
+
+.professional article div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .7rem;
+}

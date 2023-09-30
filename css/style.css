@@ -1,0 +1,271 @@
+:root {
+    --background: #0a101d;
+
+    --primary: #fca311;
+    --secondary: #14213d;
+
+    --text-1: #ffffff;
+    --text-2: #d4d4d4;
+
+    --scrollbar-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  height: 1em;
+  border-radius: 3px;
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+svg {
+    color: var(--text-1);
+}
+
+svg path {
+    fill: var(--text-1);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;    
+}
+
+header img {
+    height: 40px;
+}
+
+header a:before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 0;
+    transition: all .5s;
+}
+
+a {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-2);
+    transition: all .5s;
+}
+
+a:hover {   
+    color: var(--primary);
+}
+
+header a:hover::before {   
+    opacity: 1;
+}
+
+body {
+    padding-top: 100px;
+    background-color: var(--background);
+    color: var(--text-1);
+    font-family: 'Roboto Condensed', serif;
+}
+
+header {
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--primary);
+}
+
+header nav {
+    width: 1100px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    transition: .5s all;
+}
+
+header nav button {
+    display: none;    
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav button:hover {
+    cursor: pointer;
+}
+
+header nav button svg {
+    width: 32px;
+    height: 32px;
+}
+
+input[type='radio']:after {
+     width: 10px;
+     height: 10px;
+     border-radius: 10px;
+     top: -2px;
+     left: -1px;
+     position: relative;
+     background-color: var(--text-1);
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--primary);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox'] {
+    accent-color: var(--primary);
+}
+
+.go-top {
+    position: fixed;
+    display: flex;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.go-top svg {
+    width: 30px;
+    height: 30px;
+}
+
+.phone-menu-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.open {
+    left: 0 !important
+}
+
+.max-width {
+    max-width: 90%;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.margin-default {
+    margin-bottom: 3rem;
+}
+
+.title-default {
+    font-size: 1.9rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+.developed-by {
+    border-top: 1px solid var(--primary);
+}
+
+.developed-by p svg {
+    width: 10px;
+    height: 10px;
+}
+
+.developed-by p {
+    font-size: .8rem;
+    max-width: 90%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: .3rem 1rem;
+    text-align: center;
+}
+
+.developed-by a {
+    display: inline;
+}
+
+.footer-content {
+    padding: 1rem 0;
+}
+
+.footer-content img {
+    height: 40px;
+}
+
+.footer-content {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.footer-content ul li:first-child {
+    list-style: none;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}

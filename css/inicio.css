@@ -1,0 +1,85 @@
+
+
+.home {
+    width: 800px;
+    background-color: var(--secondary);
+    display: flex;
+    position: relative;
+}
+
+.home-left {
+    background-color: var(--secondary);
+    width: calc(100% - 172px);
+    display: flex;
+    flex-direction: column;
+    padding: 3.8rem 7rem 3.8rem 3rem;
+    clip-path: polygon(0% 0%, 79% 0%, 100% 100%, 0% 100%, 0% 80%);
+    z-index: 19;
+}
+
+.home-left > p {
+    margin-bottom: 3.2rem;
+}
+
+.home-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.home-links-container div:not(.social-links) svg {
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.home-links-container div:not(.social-links) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .8rem;
+}
+
+.home-links-container div:not(.social-links) a {
+    color: var(--text-1);
+}
+
+.social-links {
+    margin-top: .5rem;
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.social-links a {
+    opacity: .8;
+    transition: .5s all;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+.social-links a svg path, .social-links a svg circle {
+    fill: var(--background);
+}
+
+.home-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-image: url(../assets/images/eu.jpg);
+    right: 0;
+    width: 306px;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

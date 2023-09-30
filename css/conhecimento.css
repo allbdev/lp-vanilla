@@ -1,0 +1,36 @@
+.knowledge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 800px;
+}
+
+.knowledge h1 {
+    margin-bottom: 0 !important;
+    width: 100%;
+}
+
+.knowledge article {
+    width: calc(50% - 0.5rem);
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knowledge div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    padding: .8rem;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.knowledge span {
+    font-weight: 700;
+}

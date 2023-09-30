@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1000px) {
+    .home-left {
+        width: 100%;
+        clip-path: none;
+        padding: 1rem;
+    }
+
+    .home-right {
+            display: none;
+    }
+
+    .knowledge div, .knowledge article {
+        width: 100%;
+    }
+
+    .professional article {
+        flex-direction: column !important;
+    }
+
+    .professional h2 {
+        text-align: center;
+    }
+
+    .professional img {
+        margin: 0 auto;
+    }
+
+    .professional p {
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .phone-menu-header {
+        display: flex !important;
+    }
+
+    header nav button {
+        display: block !important;
+    }
+
+    header ul {
+        flex-direction: column !important;
+        position: fixed;
+        background-color: var(--secondary);
+        width: 100%;
+        left: 100%;
+        top: 0;
+        gap: 0 !important;
+        margin: .5rem auto;
+    }
+
+    header ul li a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .professional img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+
+    .sobre-mim-articles-container {
+        height: 300px !important;
+    }
+
+    .sobre-mim-buttons-container button {
+        width: 100%;
+        flex: auto;
+        background: var(--text-1);
+        border-bottom: 1px solid var(--secondary);
+        color: var(--secondary);
+    }
+
+    .sobre-mim-buttons-container path, .sobre-mim-buttons-container circle {
+        fill: var(--secondary);
+    }
+
+    .sobre-mim-buttons-container button:hover path, .sobre-mim-buttons-container button:hover circle {
+        fill: var(--text-1) !important;
+    }
+
+    .sobre-mim-buttons-container button:hover {
+        background: var(--secondary) !important;
+        color: var(--text-1) !important;
+    }
+
+    body {
+        font-size: 80%;
+    }
+}

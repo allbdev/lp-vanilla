@@ -1,0 +1,37 @@
+.services table {
+    width: 100%;
+}
+
+.services table th {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.services table th, .services table td {
+    padding: .7rem;
+    text-align: center;
+    width: 33.3%;
+}
+
+.services ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.services ul li {
+    width: fit-content;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.price:after {
+    content: '*';
+    font-size: 7px;
+    top: -8px;
+    position: relative;
+}
