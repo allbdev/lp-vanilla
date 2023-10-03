@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.professional h1 {
+.professional h2 {
     text-align: center;
 } 
 
@@ -16,7 +16,7 @@
     max-width: 100%;
 }
 
-.professional article h2{
+.professional article h3{
     text-decoration: underline;
 }
 

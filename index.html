@@ -8,10 +8,10 @@
     <meta name="description" content="Venha desenvolver o Site ou Plataforma que o seu negócio necessita!" />
     <title>Alb Dev</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/inicio.css"> 
-    <link rel="stylesheet" href="./css/conhecimento.css"> 
-    <link rel="stylesheet" href="./css/profissional.css"> 
-    <link rel="stylesheet" href="./css/sobre-mim.css"> 
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/conhecimento.css">
+    <link rel="stylesheet" href="./css/profissional.css">
+    <link rel="stylesheet" href="./css/sobre-mim.css">
     <link rel="stylesheet" href="./css/servicos.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -20,38 +20,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>
+        Vinícius Albuquerque - Dev
+    </h1>
     <header>
-        <nav class="max-width">
+        <div class="max-width header-container">
             <div>
                 <img src="assets/icons/logo-white.png" alt="Alb Dev"/>
             </div>
-            <ul id="header-menu">
-                <li>
-                    <div class="phone-menu-header">
-                        <img src="assets/icons/logo-white.png" alt="Alb Dev"/>
-                        <button onclick="showMenu()">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49z"></path></svg>
-                        </button>
-                    </div>
-                </li>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#conhecimentos">Vida Acadêmica</a></li>
-                <li><a href="#profissional">Profissional</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <button
-                onclick="showMenu()"
-            >
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
-            </button>
-        </nav>
+            <nav>
+                <ul id="header-menu">
+                    <li>
+                        <div class="phone-menu-header">
+                            <img src="assets/icons/logo-white.png" alt="Alb Dev"/>
+                            <button onclick="showMenu()">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M400 145.49L366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49z"></path></svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#conhecimentos">Vida Acadêmica</a></li>
+                    <li><a href="#profissional">Profissional</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button
+                        onclick="showMenu()"
+                >
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+                </button>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="inicio" class="home max-width margin-default">
             <div class="home-left">
-                <h1>Vinícius Albuquerque</h1>
+                <h2>Informações Iniciais</h2>
                 <p>Desenvolvedor de Software - Full Stack</p>
                 <div class="home-links-container">
                     <div>
@@ -86,12 +91,12 @@
             </div>
         </section>
         <section id="conhecimentos" class="knowledge max-width margin-default">
-            <h1 class="title-default">Vida Acadêmica</h1>
+            <h2 class="title-default">Vida Acadêmica</h2>
             <article>
                 <div>
-                    <h2>
+                    <h3>
                         Ensino médio
-                    </h2>
+                    </h3>
                     <p>
                         <span>Intituição:</span> Grupo Projeção
                     </p>
@@ -102,9 +107,9 @@
             </article>
             <article>
                 <div>
-                    <h2>
+                    <h3>
                         React JS / Node JS / React Native
-                    </h2>
+                    </h3>
                     <p>
                         <span>Intituição:</span> Sujeito Programador
                     </p>
@@ -115,9 +120,9 @@
             </article>
             <article>
                 <div>
-                    <h2>
+                    <h3>
                         React JS / React Native / Next JS
-                    </h2>
+                    </h3>
                     <p>
                         <span>Intituição:</span> RocketSeat
                     </p>
@@ -128,9 +133,9 @@
             </article>
             <article>
                 <div>
-                    <h2>
+                    <h3>
                         Ciência da Computação
-                    </h2>
+                    </h3>
                     <p>
                         <span>Intituição:</span> UVV - Universidade de Vila Velha
                     </p>
@@ -141,11 +146,11 @@
             </article>
         </section>
         <section id="profissional" class="professional max-width margin-default">
-            <h1 class="title-default">Experiências profissionais</h1>
+            <h2 class="title-default">Experiências profissionais</h2>
             <article>
                 <img src="assets/images/hardware-rede.jpg" alt="Hardware e Rede"/>
                 <div>
-                    <h2>Hardware e Rede</h2>
+                    <h3>Hardware e Rede</h3>
                     <p>
                         No periodo de 2018 a 2019 trabalhei na empresa B+ Tecnologia, pertencente a minha familia, na area de Hardware e Redes.
                         Auxiliando o meu surpevisor nos serviços de montagem de desmontagem de computadores, intalações e manutenções de rede,
@@ -157,7 +162,7 @@
             <article>
                 <img src="assets/images/software-1.jpg" alt="Desenvolvimento de Software"/>
                 <div>
-                    <h2>Desenvolvimento de Software</h2>
+                    <h3>Desenvolvimento de Software</h3>
                     <p>
                         No periodo de 2020 a 2022 trabalhei na empresa Solution4Apps, também pertencente a minha familia, mas que seria uma ramificação
                         da B+ com o objetivo de atuar na área de Desenvolvimento de Software. Aqui foi onde comecei a de fato aperfeiçoar meus conhecimentos
@@ -169,7 +174,7 @@
             <article>
                 <img src="assets/images/software-2.jpg" alt="Desenvolvimento de Software"/>
                 <div>
-                    <h2>Desenvolvimento de Software</h2>
+                    <h3>Desenvolvimento de Software</h3>
                     <p>
                         No periodo de 2022 até os dias atuais trabalho na empresa Multti, uma empresa de Porto Alegre - RS, que atua na área de tecnologia.
                         Aqui atuo como desenvolvedor Front End, web e mobile, e também sou responsável por liderar toda a minha equipe de desenvolvimento
@@ -180,32 +185,32 @@
             </article>
         </section>
         <section id="sobre-mim" class="sobre-mim max-width margin-default">
-            <h1 class="title-default">Sobre mim</h1>
+            <h2 class="title-default">Sobre mim</h2>
             <div>
                 <div class="sobre-mim-articles-container">
                     <article id="sobre-mim-musica" class="show">
-                        <h2>Música</h2>
+                        <h3>Música</h3>
                         <p>
                             Tenho um apego muito grande pela música que vem desde a minha infancia, gosto de ouvir musica principalmente durante o treino de
                             musculação e as vezes enquanto estou trabalhando.
                         </p>
                     </article>
                     <article id="sobre-mim-musculacao" class="hidden">
-                        <h2>Musculação</h2>
+                        <h3>Musculação</h3>
                         <p>
                             Sempre fui muito ligado aos esportes desde pequeno, a paixão veio principalmente do futebol e do muay thai, esportes que pratiquei
                             na infancia e adolescência. Hoje pratico musculação praticamente diariamente.
                         </p>
                     </article>
                     <article id="sobre-mim-tecnologia" class="hidden">
-                        <h2>Tecnologia</h2>
+                        <h3>Tecnologia</h3>
                         <p>
                             Desde pequeno vivo conectado, quando criança tinhamos um computador com windows 98 e foi a partir deste que tive meu primeiro contato
                             com a tecnologia, e nunca mais larguei. Sempre jogando vários jogos e desmontando/montando computadores.
                         </p>
                     </article>
                     <article id="sobre-mim-familia" class="hidden">
-                        <h2>Família</h2>
+                        <h3>Família</h3>
                         <p>
                             Meu foco hoje em dia está no meu trabalho e estudo, sempre procurando me aperfeiçoar. Porém no pouco tempo que me resta procuro estar
                             junto da minha família, pois é a parte mais importante da minha vida.
@@ -252,72 +257,81 @@
             </div>
         </section>
         <section id="servicos" class="services max-width margin-default">
-            <h1 class="title-default">Meus Serviços</h1>
+            <h2 class="title-default">Meus Serviços</h2>
             <table>
-                <tr>
-                    <th>Página estática</th>
-                    <th>Página dinâmica</th>
-                    <th>Página avançada</th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>
-                                Para negócios mais simples;
-                            </li>
-                            <li>
-                                Estético e responsivo;
-                            </li>
-                            <li>
-                                Alcance seus clientes;
-                            </li>
-                            <li>
-                                Preço reduzido!
-                            </li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Para quem quer ter o controle;
-                            </li>
-                            <li>
-                                Altere o conteúdo da sua página;
-                            </li>
-                            <li>
-                                Painel para controlar seu site;
-                            </li>
-                            <li>
-                                Como e quando você quiser!
-                            </li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Para quem quer inovar;
-                            </li>
-                            <li>
-                                Integrações com outros projetos;
-                            </li>
-                            <li>
-                                Funcionalidades avançadas;
-                            </li>
-                            <li>
-                                Tecnologias que você nunca viu!
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="price">RS 2.000,00</td>
-                    <td class="price">RS 5.000,00</td>
-                    <td class="price">RS 15.000,00</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Página estática</th>
+                        <th>Página dinâmica</th>
+                        <th>Página avançada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    Para negócios mais simples;
+                                </li>
+                                <li>
+                                    Estético e responsivo;
+                                </li>
+                                <li>
+                                    Alcance seus clientes;
+                                </li>
+                                <li>
+                                    Preço reduzido!
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Para quem quer ter o controle;
+                                </li>
+                                <li>
+                                    Altere o conteúdo da sua página;
+                                </li>
+                                <li>
+                                    Painel para controlar seu site;
+                                </li>
+                                <li>
+                                    Como e quando você quiser!
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Para quem quer inovar;
+                                </li>
+                                <li>
+                                    Integrações com outros projetos;
+                                </li>
+                                <li>
+                                    Funcionalidades avançadas;
+                                </li>
+                                <li>
+                                    Tecnologias que você nunca viu!
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price">RS 2.000,00</td>
+                        <td class="price">RS 5.000,00</td>
+                        <td class="price">RS 15.000,00</td>
+                    </tr>
+                    <tr class="no-padding">
+                        <td colspan="3">
+                            Mande sua solicitação, entrando em contato logo a baixo
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </section>
         <section id="contato" class="contact max-width margin-default">
-            <h1 class="title-default">Entrar em Contato</h1>
+            <h2 class="title-default">Entrar em Contato</h2>
             <form id="contact-form">
                 <div class="input-container">
                     <label for="nome_completo">
